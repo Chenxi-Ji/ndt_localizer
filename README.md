@@ -30,7 +30,7 @@ Our pcd and rosbag are generated and recorded on Tsinghua campus. Please prepare
 Put the pcd data to the map folder:
 
 ```bash
-cp zhulou-rs80.pcd map/
+cp 12-31-zhulou-rs80.pcd map/
 ```
 
 ### Build in your ros workspace
@@ -48,7 +48,7 @@ catkin_make
 Move your map pcd file (.pcd) to the map folder inside this project (`ndt_localizer/map`), change the pcd_path in `map_loader.launch` to you pcd path, for example:
 
 ```xml
-<arg name="pcd_path"  default="$(find ndt_localizer)/map/zhulou-rs80.pcd"/>
+<arg name="pcd_path"  default="$(find ndt_localizer)/map/12-31-zhulou-rs80.pcd"/>
 ```
 #### Config point cloud downsample
 
