@@ -8,17 +8,21 @@ Let's start our lidar-based localization learning with this simple repo!
 ## Localization in a pointcloud map(pcd)
 
 From topdown prespective on a sparse map:
+
 ![](cfgs/ndt_result_mainbuilding_rs80_topdown_x4.gif)
 
 From tracking prespective on a dense map:
+
 ![](cfgs/ndt_result_mainbuilding_rs80_follow_x4.gif)
 
 ### A demo video on zhulou-rs80 dataset:
 
 From topdown prespective on a sparse map:
+
 [![IMAGE ALT TEXT HERE](cfgs/simple_img_0_1.png)](https://youtu.be/iLKNW_xAEJQ)
 
 From tracking prespective on a dense map:
+
 [![IMAGE ALT TEXT HERE](cfgs/simple_img_0_2.png)](https://youtu.be/3wUi3WNgp94)
 
 ## How to use
