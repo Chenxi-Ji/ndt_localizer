@@ -16,7 +16,7 @@ From tracking prespective:
 ### A demo video on zhulou-rs80 dataset:
 
 From topdown prespective:
-[![IMAGE ALT TEXT HERE](cfgs/simple_img_0_1.png)](https://youtu.be/Dl07SZaVY7M)
+[![IMAGE ALT TEXT HERE](cfgs/simple_img_0_1.png)](https://youtu.be/vK9T8VLlg_c)
 
 From tracking prespective:
 [![IMAGE ALT TEXT HERE](cfgs/simple_img_0_2.png)](https://youtu.be/3wUi3WNgp94)
