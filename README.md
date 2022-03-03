@@ -7,18 +7,18 @@ Let's start our lidar-based localization learning with this simple repo!
 
 ## Localization in a pointcloud map(pcd)
 
-From topdown prespective:
+From topdown prespective (in a sparse map):
 ![](cfgs/ndt_result_mainbuilding_rs80_topdown_x4.gif)
 
-From tracking prespective:
+From tracking prespective (in a dense map):
 ![](cfgs/ndt_result_mainbuilding_rs80_follow_x4.gif)
 
 ### A demo video on zhulou-rs80 dataset:
 
-From topdown prespective:
+From topdown prespective (in a sparse map):
 [![IMAGE ALT TEXT HERE](cfgs/simple_img_0_1.png)](https://youtu.be/iLKNW_xAEJQ)
 
-From tracking prespective:
+From tracking prespective (in a dense map):
 [![IMAGE ALT TEXT HERE](cfgs/simple_img_0_2.png)](https://youtu.be/3wUi3WNgp94)
 
 ## How to use
@@ -111,7 +111,7 @@ This operation will send a init pose to topic `/initialpose`.
 play the rosbag:
 
 ```bash
-rosbag play KAIST02-small.bag --clock
+rosbag play zhulou-rs80.bag --clock
 ```
 
 Then you will see the localization result:
