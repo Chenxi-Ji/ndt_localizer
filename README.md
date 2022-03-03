@@ -13,7 +13,7 @@ From topdown prespective:
 From tracking prespective:
 ![](cfgs/ndt_result_mainbuilding_rs80_follow_x4.gif)
 
-A demo video on MulRan dataset:
+A demo video on ZhuLou dataset:
 
 From topdown prespective:
 [![IMAGE ALT TEXT HERE](cfgs/simple_img_0_1.png)](https://youtu.be/Dl07SZaVY7M)
@@ -30,7 +30,7 @@ Our pcd and rosbag are generated and recorded on Tsinghua campus. Please prepare
 Put the pcd data to the map folder:
 
 ```bash
-cp XXX.pcd map/
+cp zhulou-rs80.pcd map/
 ```
 
 ### Build in your ros workspace
@@ -48,7 +48,7 @@ catkin_make
 Move your map pcd file (.pcd) to the map folder inside this project (`ndt_localizer/map`), change the pcd_path in `map_loader.launch` to you pcd path, for example:
 
 ```xml
-<arg name="pcd_path"  default="$(find ndt_localizer)/map/XXX.pcd"/>
+<arg name="pcd_path"  default="$(find ndt_localizer)/map/zhulou-rs80.pcd"/>
 ```
 #### Config point cloud downsample
 
@@ -65,7 +65,7 @@ If your Lidar data is sparse (like VLP-16), you need to config smaller `leaf_siz
 There are two static transform in this project: `base_link_to_localizer` and `world_to_map`，replace the `ouster` with your lidar frame id if you are using a different lidar:
 
 ```xml
-<node pkg="tf2_ros" type="static_transform_publisher" name="base_link_to_localizer" args="0 0 0 0 0 0 base_link ouster"/>
+<node pkg="tf2_ros" type="static_transform_publisher" name="base_link_to_localizer" args="0 0 1.9 3.1415926 0 0 base_link rslidar"/>
 ```
 
 #### Config ndt localizer
